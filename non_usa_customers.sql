@@ -1,6 +1,6 @@
 -- Provide a query showing Customers (just their full names, customer ID and country) who are not in the US.
 
-select FirstName, LastName, CustomerId, Country
-from Customer
-where Country != 'USA'
-order by Customer.Country
+SELECT FirstName, LastName, CustomerId, Country
+FROM Customer
+WHERE Country <> 'USA'
+ORDER BY Customer.Country
